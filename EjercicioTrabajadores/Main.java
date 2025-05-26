@@ -1,27 +1,21 @@
 package EjercicioTrabajadores;
 
 public class Main {
- public static void main(String[] args) {
-        Futbolista jugador = new Futbolista();
-        jugador.nombre = "Messi";
-        jugador.concentrarse();
+    public static void main(String[] args) {
+        Futbolista jugador = new Futbolista(1, "Messi", "Mendez", 28, 10, "Delantero");
+        Entrenador tecnico = new Entrenador(2, "Julio", "Pérez", 50, "FED123");
+        Masajista masajista = new Masajista(3, "Cindy", "Martínez", 35, "Fisioterapia", 8);
+
         jugador.viajar();
-        jugador.jugarPartido();
         jugador.concentrarse();
+        jugador.jugarPartido();
 
-        Entrenador tecnico = new Entrenador();
-        tecnico.nombre = "Julio";
-        tecnico.concentrarse();
         tecnico.viajar();
+        tecnico.concentrarse();
         tecnico.dirigirPartido();
-        tecnico.dirigirEntrenamiento();
-        
-        
 
-        Masajista masajista = new Masajista();
-        masajista.nombre = "Cindy";
-        masajista.concentrarse();
         masajista.viajar();
+        masajista.concentrarse();
         masajista.darMasaje();
     }
 }

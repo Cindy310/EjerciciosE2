@@ -1,16 +1,21 @@
 package EjercicioTrabajadores;
 
 public class Masajista extends Persona {
-     public Object concentrarse;
+    private String titulacion;
+    private int aniosExperiencia;
 
-     public void concentrarse() {
-        System.out.println(nombre + " se está concentrando.");
+    public Masajista(int id, String nombre, String apellidos, int edad, String titulacion, int aniosExperiencia) {
+        super(id, nombre, apellidos, edad);
+        this.titulacion = titulacion;
+        this.aniosExperiencia = aniosExperiencia;
     }
-    public void viajar() {
-        System.out.println(nombre + " está viajando.");
+
+    @Override
+    public void concentrarse() {
+        System.out.println(getNombre() + " (masajista) se está concentrando");
     }
 
     public void darMasaje() {
-        System.out.println(nombre + " está dando un masaje.");
+        System.out.println(getNombre() + " está dando un masaje.");
     }
 }

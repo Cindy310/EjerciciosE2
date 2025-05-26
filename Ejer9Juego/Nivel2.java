@@ -22,7 +22,7 @@ public class Nivel2 {
 
         this.respuestas = new String[] {
                 "Falso",
-                "Verdadero",
+                "Falso",
                 "Verdadero",
                 "Verdadero"
         };

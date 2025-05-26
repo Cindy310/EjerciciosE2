@@ -15,7 +15,7 @@ public class Ejer2 {
     }
     promedio = (double) suma / numeros.length;
 
-    System.out.println("\nEl promedio de números ingresados es 🤓☝🏻: " + promedio);
+    System.out.println("\nEl promedio de números ingresados es : " + promedio);
     scanner.close();
   }
 }
